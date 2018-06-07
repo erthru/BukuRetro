@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/contentMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/lbJudulList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Judul : ABC" />
+
+        <TextView
+            android:id="@+id/lbPenerbitList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Penerbit : AA" />
+
+        <TextView
+            android:id="@+id/lbTglTerbitList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tgl Terbit : 20 Mei 2018" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
