@@ -2,7 +2,7 @@ package com.bapercoding.bukuretro.AppMain.Logic
 
 import android.util.Log
 import com.bapercoding.bukuretro.AppMain.Contract.KelolaBukuContract
-import com.bapercoding.bukuretro.RetrofitConfig.RetrofitModel.Response.Bawaan
+import com.bapercoding.bukuretro.RetrofitConfig.Response.Bawaan
 import com.bapercoding.bukuretro.RetrofitConfig.ApiClient
 import retrofit2.Call
 import retrofit2.Response

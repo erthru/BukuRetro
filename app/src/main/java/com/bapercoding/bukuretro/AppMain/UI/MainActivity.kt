@@ -9,7 +9,7 @@ import android.widget.Toast
 import com.bapercoding.bukuretro.Adapter.RVAdapterMain
 import com.bapercoding.bukuretro.AppMain.Contract.MainContract
 import com.bapercoding.bukuretro.AppMain.Logic.MainLogic
-import com.bapercoding.bukuretro.RetrofitConfig.RetrofitModel.Model.Buku
+import com.bapercoding.bukuretro.RetrofitConfig.Model.Buku
 import com.bapercoding.bukuretro.R
 import kotlinx.android.synthetic.main.activity_main.*
 import android.support.v7.widget.DividerItemDecoration

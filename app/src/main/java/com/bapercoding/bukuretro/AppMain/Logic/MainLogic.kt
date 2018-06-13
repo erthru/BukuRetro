@@ -2,7 +2,7 @@ package com.bapercoding.bukuretro.AppMain.Logic
 
 import android.util.Log
 import com.bapercoding.bukuretro.AppMain.Contract.MainContract
-import com.bapercoding.bukuretro.RetrofitConfig.RetrofitModel.Response.Data
+import com.bapercoding.bukuretro.RetrofitConfig.Response.Data
 import com.bapercoding.bukuretro.RetrofitConfig.ApiClient
 import retrofit2.Call
 import retrofit2.Response

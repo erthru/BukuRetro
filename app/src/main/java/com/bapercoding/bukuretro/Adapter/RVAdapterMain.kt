@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.bapercoding.bukuretro.AppMain.UI.KelolaBukuActivity
 import com.bapercoding.bukuretro.AppMain.UI.MainActivity
-import com.bapercoding.bukuretro.RetrofitConfig.RetrofitModel.Model.Buku
+import com.bapercoding.bukuretro.RetrofitConfig.Model.Buku
 import com.bapercoding.bukuretro.R
 import com.bapercoding.bukuretro.Tools
 import kotlinx.android.synthetic.main.list_main.view.*

@@ -1,7 +1,7 @@
 package com.bapercoding.bukuretro.RetrofitConfig
 
-import com.bapercoding.bukuretro.RetrofitConfig.RetrofitModel.Response.Bawaan
-import com.bapercoding.bukuretro.RetrofitConfig.RetrofitModel.Response.Data
+import com.bapercoding.bukuretro.RetrofitConfig.Response.Bawaan
+import com.bapercoding.bukuretro.RetrofitConfig.Response.Data
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
