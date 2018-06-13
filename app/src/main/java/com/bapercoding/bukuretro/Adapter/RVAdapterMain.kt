@@ -12,30 +12,24 @@ import com.bapercoding.bukuretro.AppMain.UI.MainActivity
 import com.bapercoding.bukuretro.RetrofitConfig.RetrofitModel.Buku
 import com.bapercoding.bukuretro.R
 import com.bapercoding.bukuretro.Tools
+import kotlinx.android.synthetic.main.list_main.view.*
 
-class RVAdapterMain(list: ArrayList<Buku>?, mainActivity: MainActivity) : RecyclerView.Adapter<RVAdapterMain.Holder>(){
-
-    var list = list
-    var mainActivity = mainActivity
+class RVAdapterMain(private val list: ArrayList<Buku>?, private val mainActivity: MainActivity) : RecyclerView.Adapter<RVAdapterMain.Holder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
 
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.list_main,parent,false)
-
-        return Holder(view)
+        return Holder(LayoutInflater.from(parent.context).inflate(R.layout.list_main,parent,false))
 
     }
 
-    override fun getItemCount(): Int {
-       return list!!.size
-    }
+    override fun getItemCount(): Int = list!!.size
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
-        holder.lbJudulList.text = "Judul : "+list!!.get(position).judul
-        holder.lbPenerbitList.text = "Penerbit : "+list!!.get(position).penerbit
-        holder.lbTglTerbitList.text = "Tgl Terbit : "+ Tools.AturTanggal(list!!.get(position).tglterbit)
+        holder.view.lbJudulList.text = "Judul : "+list!!.get(position).judul
+        holder.view.lbPenerbitList.text = "Penerbit : "+list!!.get(position).penerbit
+        holder.view.lbTglTerbitList.text = "Tgl Terbit : "+ Tools.AturTanggal(list!!.get(position).tglterbit)
 
-        holder.contentMain.setOnClickListener({
+        holder.view.contentMain.setOnClickListener({
 
             var i = Intent(mainActivity,KelolaBukuActivity::class.java)
             i.putExtra("mode","edit")
@@ -50,13 +44,5 @@ class RVAdapterMain(list: ArrayList<Buku>?, mainActivity: MainActivity) : Recycl
     }
 
 
-    class Holder(view:View) : RecyclerView.ViewHolder(view){
-
-        var lbJudulList:TextView = view.findViewById(R.id.lbJudulList)
-        var lbPenerbitList:TextView = view.findViewById(R.id.lbPenerbitList)
-        var lbTglTerbitList:TextView = view.findViewById(R.id.lbTglTerbitList)
-        var contentMain:LinearLayout = view.findViewById(R.id.contentMain)
-
-    }
-
+    class Holder(val view:View) : RecyclerView.ViewHolder(view)
 }

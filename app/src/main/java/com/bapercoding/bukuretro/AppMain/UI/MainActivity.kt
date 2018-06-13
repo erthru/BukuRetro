@@ -18,13 +18,13 @@ import android.support.v7.widget.DividerItemDecoration
 
 class MainActivity : AppCompatActivity(), MainContract.View {
 
-    var layoutManager:LinearLayoutManager? = null
+    lateinit var layoutManager:LinearLayoutManager
 
-    var rvAdapterMain:RVAdapterMain? = null
+    lateinit var rvAdapterMain:RVAdapterMain
 
-    var presenter:MainContract.Presenter? = null
+    lateinit var presenter:MainContract.Presenter
 
-    var loading:ProgressDialog? = null
+    lateinit var loading:ProgressDialog
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
