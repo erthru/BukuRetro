@@ -1,19 +1,15 @@
 package com.bapercoding.bukuretro.RetrofitConfig.RetrofitModel.Response
 
-import com.bapercoding.bukuretro.RetrofitConfig.RetrofitModel.Buku
+import com.bapercoding.bukuretro.RetrofitConfig.RetrofitModel.Model.Buku
 import com.google.gson.annotations.SerializedName
 
-class Data {
+data class Data (
 
     @SerializedName("data")
-    var data:ArrayList<Buku>? = null
+    var data:ArrayList<Buku>?,
 
     @SerializedName("error")
-    var error:String? = null
+    var error:String?
 
-    get() = field
-    set(value){
-        field = value
-    }
 
-}
+)

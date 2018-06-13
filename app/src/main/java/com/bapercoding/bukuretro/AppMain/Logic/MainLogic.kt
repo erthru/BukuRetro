@@ -7,9 +7,7 @@ import com.bapercoding.bukuretro.RetrofitConfig.ApiClient
 import retrofit2.Call
 import retrofit2.Response
 
-class MainLogic(view:MainContract.View) : MainContract.Presenter {
-
-    var view = view
+class MainLogic(private val view:MainContract.View) : MainContract.Presenter {
 
     override fun muatData(){
 

@@ -2,18 +2,12 @@ package com.bapercoding.bukuretro.RetrofitConfig.RetrofitModel.Response
 
 import com.google.gson.annotations.SerializedName
 
-class Bawaan {
+data class Bawaan (
 
     @SerializedName("error")
-    var error:String? = null
+    var error:String?,
 
     @SerializedName("pesan")
-    var pesan:String? = null
+    var pesan:String?
 
-
-    get() = field
-    set(value){
-        field = value
-    }
-
-}
+)

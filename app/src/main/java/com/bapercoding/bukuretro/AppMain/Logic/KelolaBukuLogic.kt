@@ -7,9 +7,7 @@ import com.bapercoding.bukuretro.RetrofitConfig.ApiClient
 import retrofit2.Call
 import retrofit2.Response
 
-class KelolaBukuLogic(view:KelolaBukuContract.View) : KelolaBukuContract.Presenter {
-
-    var view = view
+class KelolaBukuLogic(private val view:KelolaBukuContract.View) : KelolaBukuContract.Presenter {
 
     override fun tambah(judul: String?, penerbit: String?, tglterbit: String?) {
 
