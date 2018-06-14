@@ -43,9 +43,9 @@ class KelolaBukuActivity : AppCompatActivity(), KelolaBukuContract.View {
         if(i!!.hasExtra("mode")){
             if(i!!.getStringExtra("mode").equals("edit")){
                 btnKelola.text = "Perbarui"
-                txJudul.setText(i!!.getStringExtra("judul"))
-                txPenerbit.setText(i!!.getStringExtra("penerbit"))
-                txTglTerbit.setText(i!!.getStringExtra("tglterbit"))
+                txJudul.setText(i?.getStringExtra("judul"))
+                txPenerbit.setText(i?.getStringExtra("penerbit"))
+                txTglTerbit.setText(i?.getStringExtra("tglterbit"))
                 id = i!!.getStringExtra("id")
                 btnHapus.visibility = VISIBLE
             }

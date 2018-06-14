@@ -30,7 +30,7 @@ class KelolaBukuLogic(private val view:KelolaBukuContract.View) : KelolaBukuCont
                     if(response.isSuccessful){
 
                         view.dismissLoading()
-                        view.pesan(response.body()!!.pesan)
+                        view.pesan(response.body()?.pesan)
 
                     }
 

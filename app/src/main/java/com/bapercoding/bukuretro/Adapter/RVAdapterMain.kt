@@ -23,18 +23,18 @@ class RVAdapterMain(private val list: ArrayList<Buku>?, private val mainActivity
     override fun getItemCount(): Int = list!!.size
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
-        holder.view.lbJudulList.text = "Judul : "+list!!.get(position).judul
-        holder.view.lbPenerbitList.text = "Penerbit : "+list!!.get(position).penerbit
-        holder.view.lbTglTerbitList.text = "Tgl Terbit : "+ Tools.AturTanggal(list!!.get(position).tglterbit)
+        holder.view.lbJudulList.text = "Judul : "+list?.get(position)?.judul
+        holder.view.lbPenerbitList.text = "Penerbit : "+list?.get(position)?.penerbit
+        holder.view.lbTglTerbitList.text = "Tgl Terbit : "+ Tools.AturTanggal(list?.get(position)?.tglterbit)
 
         holder.view.contentMain.setOnClickListener({
 
             var i = Intent(mainActivity,KelolaBukuActivity::class.java)
             i.putExtra("mode","edit")
-            i.putExtra("id",list!!.get(position).id)
-            i.putExtra("judul",list!!.get(position).judul)
-            i.putExtra("penerbit",list!!.get(position).penerbit)
-            i.putExtra("tglterbit",list!!.get(position).tglterbit)
+            i.putExtra("id",list?.get(position)?.id)
+            i.putExtra("judul",list?.get(position)?.judul)
+            i.putExtra("penerbit",list?.get(position)?.penerbit)
+            i.putExtra("tglterbit",list?.get(position)?.tglterbit)
             mainActivity.startActivity(i)
 
         })

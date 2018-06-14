@@ -52,12 +52,12 @@ class MainActivity : AppCompatActivity(), MainContract.View {
 
     override fun onResume() {
         super.onResume()
-        presenter!!.muatData()
+        presenter?.muatData()
     }
 
     override fun dataDimuat(list:ArrayList<Buku>?) {
         rvAdapterMain = RVAdapterMain(list,this)
-        rvAdapterMain!!.notifyDataSetChanged()
+        rvAdapterMain?.notifyDataSetChanged()
         rvMain.adapter = rvAdapterMain
     }
 
@@ -70,13 +70,13 @@ class MainActivity : AppCompatActivity(), MainContract.View {
     }
 
     override fun tampilLoading() {
-        loading!!.setTitle("Proses")
-        loading!!.setMessage("Mengambil data...")
-        loading!!.show()
+        loading?.setTitle("Proses")
+        loading?.setMessage("Mengambil data...")
+        loading?.show()
     }
 
     override fun dismissLoading() {
-        loading!!.dismiss()
+        loading?.dismiss()
     }
 
 }
