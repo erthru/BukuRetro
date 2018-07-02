@@ -1,6 +1,6 @@
-package com.bapercoding.bukuretro.RetrofitConfig.Response
+package com.bapercoding.bukuretro.network.response
 
-import com.bapercoding.bukuretro.RetrofitConfig.Model.Buku
+import com.bapercoding.bukuretro.network.model.Buku
 import com.google.gson.annotations.SerializedName
 
 data class Data (

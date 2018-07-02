@@ -11,14 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AppMain.UI.MainActivity">
+        <activity android:name=".appmain.ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AppMain.UI.KelolaBukuActivity"></activity>
+        <activity android:name=".appmain.ui.KelolaBukuActivity"></activity>
     </application>
 
 </manifest>

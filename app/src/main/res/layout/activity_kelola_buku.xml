@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:focusableInTouchMode="true"
     android:layout_height="match_parent"
-    tools:context=".AppMain.UI.KelolaBukuActivity">
+    tools:context=".appmain.ui.KelolaBukuActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

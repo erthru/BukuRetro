@@ -1,4 +1,4 @@
-package com.bapercoding.bukuretro.RetrofitConfig.Model
+package com.bapercoding.bukuretro.network.model
 
 import com.google.gson.annotations.SerializedName
 
