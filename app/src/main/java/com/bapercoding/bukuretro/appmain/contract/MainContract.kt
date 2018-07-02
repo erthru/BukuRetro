@@ -1,6 +1,6 @@
-package com.bapercoding.bukuretro.AppMain.Contract
+package com.bapercoding.bukuretro.appmain.contract
 
-import com.bapercoding.bukuretro.RetrofitConfig.Model.Buku
+import com.bapercoding.bukuretro.network.model.Buku
 
 interface MainContract {
 

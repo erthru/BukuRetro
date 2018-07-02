@@ -1,13 +1,13 @@
-package com.bapercoding.bukuretro.Adapter
+package com.bapercoding.bukuretro.adapter
 
 import android.content.Intent
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.bapercoding.bukuretro.AppMain.UI.KelolaBukuActivity
-import com.bapercoding.bukuretro.AppMain.UI.MainActivity
-import com.bapercoding.bukuretro.RetrofitConfig.Model.Buku
+import com.bapercoding.bukuretro.appmain.ui.KelolaBukuActivity
+import com.bapercoding.bukuretro.appmain.ui.MainActivity
+import com.bapercoding.bukuretro.network.model.Buku
 import com.bapercoding.bukuretro.R
 import com.bapercoding.bukuretro.Tools
 import kotlinx.android.synthetic.main.list_main.view.*

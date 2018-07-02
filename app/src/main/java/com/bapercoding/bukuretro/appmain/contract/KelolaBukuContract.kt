@@ -1,4 +1,4 @@
-package com.bapercoding.bukuretro.AppMain.Contract
+package com.bapercoding.bukuretro.appmain.contract
 
 interface KelolaBukuContract {
 

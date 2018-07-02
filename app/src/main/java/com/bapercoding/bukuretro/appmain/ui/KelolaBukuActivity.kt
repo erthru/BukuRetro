@@ -1,4 +1,4 @@
-package com.bapercoding.bukuretro.AppMain.UI
+package com.bapercoding.bukuretro.appmain.ui
 
 import android.app.AlertDialog
 import android.app.DatePickerDialog
@@ -9,10 +9,9 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View.VISIBLE
-import android.widget.DatePicker
 import android.widget.Toast
-import com.bapercoding.bukuretro.AppMain.Contract.KelolaBukuContract
-import com.bapercoding.bukuretro.AppMain.Logic.KelolaBukuLogic
+import com.bapercoding.bukuretro.appmain.contract.KelolaBukuContract
+import com.bapercoding.bukuretro.appmain.logic.KelolaBukuLogic
 import com.bapercoding.bukuretro.R
 import kotlinx.android.synthetic.main.activity_kelola_buku.*
 import java.util.*

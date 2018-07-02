@@ -1,9 +1,9 @@
-package com.bapercoding.bukuretro.AppMain.Logic
+package com.bapercoding.bukuretro.appmain.logic
 
 import android.util.Log
-import com.bapercoding.bukuretro.AppMain.Contract.MainContract
-import com.bapercoding.bukuretro.RetrofitConfig.Response.Data
-import com.bapercoding.bukuretro.RetrofitConfig.ApiClient
+import com.bapercoding.bukuretro.appmain.contract.MainContract
+import com.bapercoding.bukuretro.network.response.Data
+import com.bapercoding.bukuretro.network.ApiClient
 import retrofit2.Call
 import retrofit2.Response
 

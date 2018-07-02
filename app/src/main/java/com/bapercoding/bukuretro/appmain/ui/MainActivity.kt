@@ -1,4 +1,4 @@
-package com.bapercoding.bukuretro.AppMain.UI
+package com.bapercoding.bukuretro.appmain.ui
 
 import android.app.ProgressDialog
 import android.content.Intent
@@ -6,10 +6,10 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.widget.Toast
-import com.bapercoding.bukuretro.Adapter.RVAdapterMain
-import com.bapercoding.bukuretro.AppMain.Contract.MainContract
-import com.bapercoding.bukuretro.AppMain.Logic.MainLogic
-import com.bapercoding.bukuretro.RetrofitConfig.Model.Buku
+import com.bapercoding.bukuretro.adapter.RVAdapterMain
+import com.bapercoding.bukuretro.appmain.contract.MainContract
+import com.bapercoding.bukuretro.appmain.logic.MainLogic
+import com.bapercoding.bukuretro.network.model.Buku
 import com.bapercoding.bukuretro.R
 import kotlinx.android.synthetic.main.activity_main.*
 import android.support.v7.widget.DividerItemDecoration
